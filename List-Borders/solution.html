@@ -11,26 +11,51 @@
 
     /* Add these styles in order */
      
-    /* Center the title "High Factor Times Tables */
+    .title {
+      text-align:center;
+    }
 
+    #tables li  {
+      display:inline-block;
+    }
     /* Display each table in a row with inline-block */
     
     /* Put a rounded (20px) solid black border box around the timestables div */
-
+    #timestables {
+      border:1px solid;
+      border-radius:20px;
+    }
     /* Put a rounded (10px) solid black border box around EACH times table */
-    
+    #tables ol {
+      border:1px solid;
+      border-radius:10px;
+    }
     /* underline the top numbers red */
-    
+    li h4:first-child {
+      border-bottom:3px red solid;
+    }
     /* go night mode on hovers over each timestable, but not the parent  */
-  
+    li ol:first-child:hover {
+      background-color:black ;
+      color:white;
+    }
     /* 20 px space below the last equation in each table */
-
+    ol li:last-child {
+      padding-bottom:20px;
+    }
     /* add a top margin of 20px on each table, but not the parent */
-
+    li ol:first-child {
+      margin-top:20px;
+    }
      /* subtract 20px from left margins of each child table, add it to the right margins */
-
+    li ol {
+      margin-left:-20px;
+      margin-right:20px
+    }
     /* put 25px padding at the bottom of the parent  */
-
+    #tables {
+      padding:25px;
+    }
    </style>
 </head>
 
@@ -45,7 +70,7 @@
   </div>
   <a href = "../index.html">Back Home</a>
   <div id="timestables">
-    <h2>High Factor Times Tables</h2>
+    <h2 class="title">High Factor Times Tables</h2>
     <ol id="tables">
       <li>
         <ol>

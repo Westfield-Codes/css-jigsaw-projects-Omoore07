@@ -8,32 +8,66 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <style>
-    .button:hover {
-      background-color:#0C97B6;
-      color:white;
-    }
-    .button {
-       border:1px solid #0C97B6;
-        display:inline-block;
-        padding:10px;
-        border-radius:10px;
-        transition-duration: 0.4s;
+.button:hover {
+  background-color:#0C97B6;
+  color:white;
+}
+.button {
+    border:1px solid #0C97B6;
+    display:inline-block;
+    padding:10px;
+    border-radius:10px;
+    transition-duration: 0.4s;
 
-    }
+}
 
-    .button2 {
-      background-color:red;
-      margin:25px;
-      padding:15px 25px;
-      color:white;
-      width:100px;
-    }
+.button2 {
+  background-color:red;
+  margin:25px;
+  padding:15px 25px;
+  color:white;
+  width:150px;
+  transition-duration: 1s;
+  height:50px;
+}
 
-    .button2:hover {
-      width:300px;
-    }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.button2:hover {
+  width:250px;
+  transition-duration: 1s;
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
+}
     
-
+.button3 {
+  width:125px;
+  height:40px;
+}
 
   </style>
 </head>
@@ -53,9 +87,10 @@
   <button class="button2" style="vertical-align:middle"><span>Button 2</span></button2>
   <button class="button3">Button 3</button3><br>
   
-  <a href="../index.html">Back Home</a>
-
+ 
 
 
 </body>
+
+
 </html>
